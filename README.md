@@ -1,1 +1,1 @@
-# aidankinzett.github.io !
+# aidankinzett.github.io
