@@ -396,6 +396,7 @@ a:hover {
 .project-tagline {
     margin-bottom: 2rem;
     font-weight: normal;
+    font-size: 3rem;
     /*opacity: 0.7;*/
 }
 

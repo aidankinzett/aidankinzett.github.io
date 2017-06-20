@@ -16,9 +16,3 @@ gems:
 
 #Others
 markdown: kramdown
-
-#Dumb stuff
-emojiArray:
-    - "😁"
-    - "😊"
-    - "❤️"
