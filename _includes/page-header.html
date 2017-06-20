@@ -4,12 +4,10 @@
     <a href="https://github.com/aidankinzett" class="btn">GitHub</a>
     <a href="https://twitter.com/aidankinzett" class="btn">Twitter</a>
     <a href="mailto:hello@aidankinzett.com" class="btn">Email</a>
-    <script type="text/javascript">
-        { % include {
-                {
-                    site.js
-                }
-            } %
-        }
+    <script>
+        emojis = ["😁", "❤️", "😊"];
+
+        x = document.getElementbyId("project-tagline");
+        x.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
     </script>
 </section>
