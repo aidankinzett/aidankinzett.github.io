@@ -1,2 +1,3 @@
-# Aidan Kinzett
-*insert website here*
+[GitHub](https://github.com/aidankinzett)
+Email
+Whatever
