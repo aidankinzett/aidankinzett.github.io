@@ -1,7 +1,15 @@
 <section class="page-header">
     <h1 class="project-name">{{ site.title }}</h1>
-    <h2 class="project-tagline">{{ site.emojiArray | sample }}</h2>
+    <h2 class="project-tagline" id="project-tagline">🇦🇺</h2>
     <a href="https://github.com/aidankinzett" class="btn">GitHub</a>
     <a href="https://twitter.com/aidankinzett" class="btn">Twitter</a>
     <a href="mailto:hello@aidankinzett.com" class="btn">Email</a>
+    <script type="text/javascript">
+        { % include {
+                {
+                    site.js
+                }
+            } %
+        }
+    </script>
 </section>
