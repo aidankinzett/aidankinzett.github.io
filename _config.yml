@@ -1,13 +1,13 @@
 # Setup
 title:        Aidan Kinzett
-tagline:      ?
+tagline:      "?"
 baseurl:      ""
 paginate:     1
 
 # About/contact
 author:
   name:       Aidan Kinzett
-  url:        http://aidankinzett.com 
+  url:        "http://aidankinzett.com"
 
 # Gems
 gems:
