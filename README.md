@@ -1,6 +1,6 @@
 # My website
 
-This website is created using [Jekyll][1] and [@pietromenna][3]'s Jekyll version of [@jasonlong][2]'s [Cayman theme][4].
+This website is created using [Jekyll][1] and my edited version of [@pietromenna][3]'s Jekyll version of [@jasonlong][2]'s [Cayman theme][4].
 
 
 
