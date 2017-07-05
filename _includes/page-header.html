@@ -99,8 +99,8 @@
             rules[65].style.color = "#" + getDarkerColor(hexCode1, hexCode2);
 
             // save hex codes in cookie
-            document.cookie = "hexCode1=" + hexCode1;
-            document.cookie = "hexCode2=" + hexCode2;
+            document.cookie = "hexCode1=" + hexCode1 +"; path=/";
+            document.cookie = "hexCode2=" + hexCode2+"; path=/";
         }
 
         function randomiseColors() {
