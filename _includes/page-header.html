@@ -4,6 +4,7 @@
     <a href="https://github.com/aidankinzett" class="btn">GitHub</a>
     <a href="https://twitter.com/aidankinzett" class="btn">Twitter</a>
     <a href="mailto:hello@aidankinzett.com" class="btn">Email</a>
+    <a onclick="randomiseColors()" class="btn">Random Colors</a>
     <script>
         var emojis = ["😁", "❤️", "😊", "🇦🇺", "🏳️‍🌈", "⚽️🚗💨"];
         var emoji = emojis[Math.floor(Math.random() * emojis.length)];
@@ -72,23 +73,51 @@
             return lightness1 > lightness2 ? hex1 : hex2;
         }
 
-        // get the random hex codes
-        hexCode1 = randomHexCode();
-        hexCode2 = randomHexCode();
+        function randomColors() {
+            // get the random hex codes
+            hexCode1 = randomHexCode();
+            hexCode2 = randomHexCode();
 
-        // edit the background image for the page header
-        document.getElementById("page-header").style.backgroundImage = "linear-gradient(-90deg, #" + hexCode1 + ", #" + hexCode2 + ")";
+            return [hexCode1, hexCode2];
+        }
 
-        // get list of rules
-        var rules = [];
-        if (document.styleSheets[2].cssRules)
-            rules = document.styleSheets[2].cssRules;
-        else if (document.styleSheets[2].rules)
-            rules = document.styleSheets[2].rules;
-        console.log(rules);
+        function styleColors(hexCodes) {
+            hexCode1 = hexCodes[0];
+            hexCode2 = hexCodes[1];
+            // edit the background image for the page header
+            document.getElementById("page-header").style.backgroundImage = "linear-gradient(-90deg, #" + hexCode1 + ", #" + hexCode2 + ")";
 
-        // edit rule for headersd
-        rules[91].style.color = "#" + getLighterColor(hexCode1, hexCode2);
-        rules[65].style.color = "#" + getDarkerColor(hexCode1, hexCode2);
+            // get list of rules
+            var rules = [];
+            if (document.styleSheets[2].cssRules)
+                rules = document.styleSheets[2].cssRules;
+            else if (document.styleSheets[2].rules)
+                rules = document.styleSheets[2].rules;
+
+            // edit rule for headers
+            rules[91].style.color = "#" + getLighterColor(hexCode1, hexCode2);
+            rules[65].style.color = "#" + getDarkerColor(hexCode1, hexCode2);
+
+            // save hex codes in cookie
+            document.cookie = "hexCode1=" + hexCode1;
+            document.cookie = "hexCode2=" + hexCode2;
+        }
+
+        function randomiseColors() {
+            colors = randomColors();
+            styleColors(colors);
+        }
+
+        // onload
+        var cookiesString = document.cookie
+        if (cookiesString != "") {
+            cookiesArray = cookiesString.split(";");
+            hexCode1 = cookiesArray[0].split("=")[1]
+            hexCode2 = cookiesArray[1].split("=")[1]
+
+            styleColors([hexCode1, hexCode2]);
+        } else {
+            randomiseColors();
+        }
     </script>
 </section>
