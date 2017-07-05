@@ -2,15 +2,14 @@
     <h1 class="project-name"><a href="{{ site.url }}" style="color: white; text-decoration: none;">{{ site.title }}</a></h1>
     <h2 class="project-tagline" id="project-tagline">🇦🇺</h2>
     <a href="https://github.com/aidankinzett" class="btn">GitHub</a>
-    <a href="https://twitter.com/aidankinzett" class="btn">Twitter</a>
-    <a href="mailto:hello@aidankinzett.com" class="btn">Email</a>
-    <a onclick="randomiseColors()" class="btn">Random Colors</a>
+    <a href="" class="btn">?</a>
+    <a href="mailto:hello@aidankinzett.com" class="btn">Email</a><br />
+    <a onclick="randomiseColors()" class="btn">Randomise Colors</a>
     <script>
         var emojis = ["😁", "❤️", "😊", "🇦🇺", "🏳️‍🌈", "⚽️🚗💨"];
         var emoji = emojis[Math.floor(Math.random() * emojis.length)];
 
         document.getElementById("project-tagline").innerHTML = emoji;
-        document.getElementById("sitetitle").innerHTML = emoji + "  Aidan Kinzett";
 
         function randomHexCode() {
             var hex = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
