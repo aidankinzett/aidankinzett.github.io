@@ -1,0 +1,25 @@
+/*
+
+TODO: make this responsive
+
+
+
+*/
+
+.social-icon {
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+svg path {
+    fill: white;
+}
+
+.social-link {
+    padding: 0 25px;
+}
+
+.social-links {
+    padding: 15px 0;
+}
