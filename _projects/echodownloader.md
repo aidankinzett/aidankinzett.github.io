@@ -1,7 +1,7 @@
 ---
 title:  EchoDownloader
 layout: project
-date: 2017-07-17
+date: 2017-07-22
 ---
 [EchoDownloader](https://github.com/aidankinzett/EchoDownloader) is a Python 3 script that checks multiple echo360 lecture recording RSS feeds, downloads any new lectures, then renames and sorts them into subject folders. It can also download videos in high resolution, which is not possible through the website.
 
