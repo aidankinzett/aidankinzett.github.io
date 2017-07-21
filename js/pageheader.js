@@ -81,7 +81,7 @@ function styleColors(hexCodes) {
         rules = document.styleSheets[2].rules;
 
     // edit rule for headers
-    rules[91].style.color = "#" + getLighterColor(hexCode1, hexCode2);
+    rules[93].style.color = "#" + getLighterColor(hexCode1, hexCode2);
     rules[65].style.color = "#" + getDarkerColor(hexCode1, hexCode2);
 
     // save hex codes in cookie
