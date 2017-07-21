@@ -1,9 +1,5 @@
 /*
-
 TODO: make this responsive
-
-
-
 */
 
 .social-icon {
@@ -14,6 +10,11 @@ TODO: make this responsive
 
 svg path {
     fill: white;
+    opacity: 0.7;
+}
+
+svg:hover path {
+    opacity: 1;
 }
 
 .social-link {
